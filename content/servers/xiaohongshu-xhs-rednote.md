@@ -1,6 +1,6 @@
 ---
-title: Xiaohongshu XHS RedNote Insights MCP
-description: A read-only MCP server for Xiaohongshu (Little Red Book / RedNote / XHS) note search, note details, comments, creator profiles, and creator post lists.
+title: SocialDataX Xiaohongshu XHS RedNote MCP
+description: A read-only remote MCP server for Xiaohongshu / XHS / RedNote note and product research, comments, replies, and creator insights.
 category: Search
 features:
 - Search and Information Retrieval
@@ -8,16 +8,16 @@ features:
 - Research Tools
 layout: server
 created_at: 2026-04-29
-updated_at: 2026-04-29
+updated_at: 2026-08-27
 github_url: https://github.com/DevinChen2014/xiaohongshu-xhs-rednote-mcp
-website_url: https://52choujiang.com/assistant
+website_url: https://socialdatax.com
 license: MIT
 free: false
 ---
 
 ## Overview
 
-The Xiaohongshu XHS RedNote Insights MCP server is a read-only remote MCP service for Xiaohongshu social media research workflows. It provides tools for note search, note detail retrieval, comment pagination, creator profile lookup, and creator post list retrieval. This makes it useful for market research, creator analysis, comment insights, topic discovery, and competitive monitoring inside AI assistants and MCP-compatible clients.
+The SocialDataX Xiaohongshu XHS RedNote MCP server is a read-only remote service for public note and product research. It provides note search and details, product search and details, comments and replies, creator profiles, creator note lists, search suggestions, and account balance lookup.
 
 The service is exposed through a remote `streamable_http` endpoint and uses API key authentication through the `Authorization` header.
 
@@ -30,28 +30,20 @@ The service is exposed through a remote `streamable_http` endpoint and uses API 
 
 ## Example
 
-To connect this MCP server from an MCP client that supports remote `streamable_http`, use the following configuration and replace `<XHS_MCP_API_KEY>` with your own API key:
+To connect from an MCP client that supports remote `streamable_http`, use the following configuration and replace `<SOCIALDATAX_API_KEY>` with your API key from [SocialDataX](https://socialdatax.com):
 
 ```json
 {
   "mcpServers": {
-    "xiaohongshu-xhs-rednote-insights": {
+    "socialdatax-xhs": {
       "type": "streamable_http",
-      "url": "https://mcp.52choujiang.com/xhs/mcp",
+      "url": "https://mcp.socialdatax.com/xhs/mcp",
       "headers": {
-        "Authorization": "Bearer <XHS_MCP_API_KEY>"
+        "Authorization": "Bearer <SOCIALDATAX_API_KEY>"
       }
     }
   }
 }
 ```
 
-You can then use tools such as:
-
-- `xhs_search_notes`
-- `xhs_get_note_detail_by_note_id`
-- `xhs_get_note_comments_by_note_id`
-- `xhs_get_user_info_by_user_id`
-- `xhs_get_user_posted_notes_by_user_id`
-
-For API key details and client setup examples, see the public repository and documentation links above.
+For the current tool list and additional client examples, see the public repository linked above.
