@@ -8,9 +8,9 @@ features:
 - Research Tools
 layout: server
 created_at: 2026-08-27
-updated_at: 2026-08-27
+updated_at: 2026-10-20
 github_url: https://github.com/DevinChen2014/wechat-channels-mcp
-website_url: https://socialdatax.com
+website_url: https://socialdatax.com/ai?from=mcpserve
 license: MIT
 free: false
 ---
@@ -33,4 +33,6 @@ SocialDataX WeChat Channels and Official Account MCP provides authenticated, rea
 }
 ```
 
-Get an API key and setup guidance at [SocialDataX](https://socialdatax.com). The public repository contains the current tool list and client examples.
+Get an API key and setup guidance at [SocialDataX](https://socialdatax.com/ai?from=mcpserve). The public repository contains the current tool list and client examples.
+
+Business calls consume SocialDataX points. Use your own API key and review the current pricing before use.

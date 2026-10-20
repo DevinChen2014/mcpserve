@@ -8,9 +8,9 @@ features:
 - Research Tools
 layout: server
 created_at: 2026-04-29
-updated_at: 2026-08-27
+updated_at: 2026-10-20
 github_url: https://github.com/DevinChen2014/xiaohongshu-xhs-rednote-mcp
-website_url: https://socialdatax.com
+website_url: https://socialdatax.com/ai?from=mcpserve
 license: MIT
 free: false
 ---
@@ -30,7 +30,7 @@ The service is exposed through a remote `streamable_http` endpoint and uses API 
 
 ## Example
 
-To connect from an MCP client that supports remote `streamable_http`, use the following configuration and replace `<SOCIALDATAX_API_KEY>` with your API key from [SocialDataX](https://socialdatax.com):
+To connect from an MCP client that supports remote `streamable_http`, use the following configuration and replace `<SOCIALDATAX_API_KEY>` with your API key from [SocialDataX](https://socialdatax.com/ai?from=mcpserve):
 
 ```json
 {
@@ -47,3 +47,5 @@ To connect from an MCP client that supports remote `streamable_http`, use the fo
 ```
 
 For the current tool list and additional client examples, see the public repository linked above.
+
+Business calls consume SocialDataX points. Use your own API key and review the current pricing before use.
